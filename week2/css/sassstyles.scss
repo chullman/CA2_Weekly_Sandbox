@@ -1,0 +1,29 @@
+@mixin italic-bold {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.movie-card {
+    width: 300px;
+    box-shadow: 1px 1px 5px lightgray;
+    border-radius: 15px;
+    overflow: hidden;
+    img {
+        width: 100px;
+    }
+    h2 {
+        color: coral;
+    }
+    button {
+        background: coral;
+        color: white;
+    }
+    p {
+        //font-style: italic;
+        //font-weight: bold;
+        @include italic-bold;
+    }
+    .movie-info {
+        padding: 10px;
+    }
+}
