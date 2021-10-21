@@ -28,12 +28,33 @@
         .puppy-link:hover {
           text-decoration: none;
         }
+
+        .cat-img {
+          width: 200px;
+          height: 200px;
+
+        }
+
+        .cat-img:hover {
+          animation-name: cathover;
+          animation-duration: 2s;
+        }
+
+        @keyframes cathover {
+          100% {
+            transform: scale(1.5) rotate(45deg);
+            filter: grayscale(100%);
+          }
+        }
+
     </style>
 
 
     <img class="puppy-img" src="flexbox_images/cute-puppy.jpg"/>
 
     <a class="puppy-link" href="https://www.puppyspot.com/">Buy a Puppy</a>
+
+    <img class="cat-img" src="flexbox_images/1.jpg"/>
 
 </body>
 </html>
